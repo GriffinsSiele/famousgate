@@ -1,10 +1,3 @@
-"""
-FamousGate Hotels - Executive Monitoring Dashboard (Demo Version)
-Run locally with: streamlit run app.py
-
-✅ Supports REAL AI (OpenAI) when you add your API key in .streamlit/secrets.toml
-"""
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -235,7 +228,7 @@ Answer the user's question concisely and professionally.
 
     try:
         response = client.chat.completions.create(
-            model="gpt-4o-mini",
+            model="gpt-5.5",
             messages=[
                 {"role": "system", "content": context},
                 {"role": "user", "content": question}
